@@ -1,0 +1,98 @@
+.page-footer {
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2f303a;
+  }
+  .footer-container {
+    display: flex;
+  }
+  .address {
+    width: calc(25%);
+    padding: 60px 0;
+  }
+  .address-list {
+    @extend %item;
+  }
+  .address-list .list {
+    margin-bottom: 9px;
+
+    & .list:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .contacts-footer {
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: $accent-color;
+  }
+  }
+  .map-link {
+    color: $secondary-text-color;
+  }
+  .join-us-box {
+    width: calc(25%);
+    padding: 72px 0 60px;
+  }
+  .join-us {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $secondary-text-color;
+  }
+  .subscription {
+    padding-top: 72px;
+    padding-bottom: 94px;
+  }
+  .subscription-form {
+    display: flex;
+  }
+  .footer-email {
+    margin-right: 12px;
+    padding: 15px 16px;
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: $secondary-text-color;
+    background-color: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+  .email-btn {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    border: none;
+    min-width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 28px;
+    cursor: pointer;
+    color: $secondary-text-color;
+    background-color: $accent-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  
